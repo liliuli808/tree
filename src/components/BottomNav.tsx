@@ -3,6 +3,7 @@ import { View, TouchableOpacity, Text, StyleSheet, Platform, Dimensions } from '
 import { Home, MessageSquare, User, Plus } from 'lucide-react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+
 // 这些 Props 是 React Navigation 传递给自定义 TabBar 的标准参数
 // 如果你还没配路由，可以暂时忽略类型错误，先把 UI 做出来
 interface BottomNavProps {
@@ -165,7 +166,7 @@ const styles = StyleSheet.create({
   iconWrapper: {
     padding: 6,
     borderRadius: 12,
-    transition: 'all', // RN 不支持 CSS transition，需要用 Reanimated 库做动画，这里先忽略
+    //transition: 'all', // RN 不支持 CSS transition，需要用 Reanimated 库做动画，这里先忽略
   },
   iconWrapperActive: {
     transform: [{ translateY: -2 }], // -translate-y-1
